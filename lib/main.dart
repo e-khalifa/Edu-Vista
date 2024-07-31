@@ -1,3 +1,4 @@
+import 'package:edu_vista/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/onboarding_page.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: ColorUtility.scaffoldBackground,
         useMaterial3: true,
       ),
-      home: const OnBoardingPage(),
+      home: const SplashPage(),
     );
   }
 }
