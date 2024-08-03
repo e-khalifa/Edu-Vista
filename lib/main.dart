@@ -1,7 +1,6 @@
 import 'package:edu_vista/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
-import 'pages/onboarding_page.dart';
 import 'utils/color_utility.dart';
 
 void main() {
