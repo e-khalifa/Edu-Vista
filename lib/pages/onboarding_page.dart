@@ -62,7 +62,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            if (currentPage != 3) buildSkipButton(),
+            buildSkipBackButton(),
             buildPageView(),
             buildBottomSection(),
           ],
@@ -71,15 +71,15 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
     );
   }
 
-  Widget buildSkipButton() {
+  Widget buildSkipBackButton() {
     return Positioned(
         top: 10,
         right: 10,
         child: TextButton(
-          onPressed: skipToEnd,
-          child: const Text(
-            'Skip',
-            style: TextStyle(
+          onPressed: currentPage == 3 ? goToPreviousPage : skipToEnd,
+          child: Text(
+            currentPage == 3 ? 'Back' : 'Skip',
+            style: const TextStyle(
                 color: ColorUtility.mediumBlack, fontWeight: FontWeight.w300),
           ),
         ));

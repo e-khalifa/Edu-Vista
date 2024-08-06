@@ -5,5 +5,7 @@ class ColorUtility {
   static const secondary = Color(0xffF5BB06);
   static const scaffoldBackground = Color(0xfffcfcfc);
   static const grey = Color(0xff858383);
+  static Color softGrey = Colors.grey.shade300;
+
   static const mediumBlack = Color(0xff1D1B20);
 }
